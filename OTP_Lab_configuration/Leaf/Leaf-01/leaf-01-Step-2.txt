@@ -1,0 +1,3 @@
+!
+interface Loopback 0
+ ip address 10.208.20.1/28

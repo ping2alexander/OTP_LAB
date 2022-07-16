@@ -1,0 +1,10 @@
+---
+- name: Configure leaf switch
+  hosts: 127.0.0.1
+  tasks:
+    - name: Leaf switch variable filename
+      include_vars: leaf-01.yml
+    - name: Copy values from var file to template file
+      template: 
+        src: test1.j2
+        dest: /home/alexander/Learning/output.txt

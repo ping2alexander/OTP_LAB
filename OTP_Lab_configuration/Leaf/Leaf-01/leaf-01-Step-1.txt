@@ -1,0 +1,324 @@
+!
+interface Ethernet1
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet2
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet3
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet4
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet5
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet6
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet7
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet8
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet9
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet10
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet11
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet12
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet13
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet14
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet15
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet16
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet17
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet18
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet19
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet20
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet21
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet22
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet23
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet24
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet25
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet26
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet27
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet28
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet29
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet30
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet31
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet32
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet33
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet34
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet35
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet36
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet37
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet38
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet39
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet40
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet41
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet42
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet43
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet44
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet45
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet46
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet47
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet48
+  mtu 9100
+  speed 25000
+  fec none
+  no shutdown
+!
+interface Ethernet53
+  mtu 9100
+  speed 100000
+  fec none
+  no shutdown
+!
+interface Ethernet54
+  mtu 9100
+  speed 100000
+  fec none
+  no shutdown
+!
+interface Ethernet55
+  mtu 9100
+  speed 100000
+  fec none
+  no shutdown
+!
+interface Ethernet56
+  mtu 9100
+  speed 100000
+  fec none
+  no shutdown
+!
+interface Ethernet49
+  mtu 9100
+  speed 200000
+  fec none
+  shutdown
+!
+interface Ethernet50
+  mtu 9100
+  speed 200000
+  fec none
+  shutdown

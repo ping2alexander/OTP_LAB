@@ -1,0 +1,5 @@
+{% for interface in Leaf01.LoopbackVLAN %}
+!
+interface Loopback {{interface.Index}}
+ ip address {{interface.IPAddress}}/{{interface.Netmask}}
+{% endfor %}

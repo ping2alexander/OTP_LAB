@@ -1,0 +1,29 @@
+---
+- name: Enable all ethernet ports on leaf switch
+  hosts: 127.0.0.1
+  tasks:
+    - name: Leaf switch variable declaration
+      include_vars: leaf-01-var.yml
+    - name: Copy values from var file to template file
+      template: 
+        src: leaf-01-template-step-01.j2
+        dest: /home/alexander/OTP_Lab_configuration/Leaf/Leaf-01/leaf-01-Step-1.txt
+- name: Create loopback interface
+  hosts: 127.0.0.1
+  tasks:
+    - name: Leaf switch variable declaration
+      include_vars: leaf-01-var.yml
+    - name: Copy values from var file to template file
+      template:
+        src: leaf-01-template-step-02.j2
+        dest: /home/alexander/OTP_Lab_configuration/Leaf/Leaf-01/leaf-01-Step-2.txt
+- name: BGP configuration
+  hosts: 127.0.0.1
+  tasks:
+    - name: Leaf switch variable declaration
+      include_vars: leaf-01-var.yml
+    - name: Copy values from var file to template file
+      template:
+        src: leaf-01-template-step-03.j2
+        dest: /home/alexander/OTP_Lab_configuration/Leaf/Leaf-01/leaf-01-Step-3.txt
+

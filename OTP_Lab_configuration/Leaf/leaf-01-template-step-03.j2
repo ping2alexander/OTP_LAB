@@ -1,0 +1,23 @@
+!
+router bgp {{Leaf01.BGP.ASNumber}}
+ router-id {{Leaf01.BGP.routerId}}
+ log-neighbor-changes
+ timer 60 180
+{% for addr_fam in Leaf01.BGP.AddressFamily %}
+ !
+ address-family {{addr_fam.AF}} unicast
+  redistribution {{addr_fam.Distribution}}
+  maximum-paths 1
+  maximum-paths ibgp 1
+{% endfor %}
+{% for neigh in Leaf01.BGP.Neighbors %}
+ !
+ neighbor interface {{neigh.interface}}
+  remote-as {{neigh.remoteas}}
+{% for addr_fam in neigh.AddressFamily %}
+  !
+  address-family {{addr_fam.AF}} unicast
+   activate
+{% endfor %}
+{% endfor %}
+

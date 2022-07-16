@@ -1,0 +1,49 @@
+Execution order:
+================
+1) Enable all ethernet interfaces
+2) Create Loopback Interface
+3) BGP Setup:(IP unnumbered)
+        1) Run I-BGP between Leaf-01 and Leaf-02
+        2) Run E-BGP between Leaf-01/02 and Spine-1/2
+
+        Note: Configure loopback '0' interface ip as router-Id
+
+        I-BGP:
+        ------
+                a) AS-Number range: 65101
+                b) Address Family: Ipv4 and Ipv6
+                c) Redistribution: Connected
+        E-BGP:
+        ------
+                a) AS-Number range: 65100
+                b) Address Family: Ipv4 and Ipv6
+                c) Redistribution: Connected
+
+4) McLAG setup:
+        a) Create McLAG peer interfaces
+        b) Create a portchannel to establish ICCP communication
+        c) McLAG configuration:
+                1) McLAG domain
+                2) Configuring source and peer ipaddresses
+                3) Configure peer-link
+                4) McLAG ports configurations
+
+   Note: We can use loopback interfaces or McLAG peer interfaces for keep-alive message exchange
+
+
+5) VRRP setup:
+	1) Configure Leaf-01 and Leaf-02 as VRRP gateway
+	   ToR[1-6]:
+	   ---------
+		a) Leaf-01 - Master(Priority: 250)
+		b) Leaf-02 - Backup(Priority:200)
+	   ToR[7-12]:
+	   ----------
+		a) Leaf-01 - Backup(Priority: 200)
+                b) Leaf-02 - Master(Priority:250)
+
+	2) VIP  - x.x.x.254
+
+
+6) DHCP-Relay:
+	1) Configure Leaf-01 and Leaf-02 as DHCP-relay agents.

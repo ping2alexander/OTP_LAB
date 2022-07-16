@@ -1,0 +1,14 @@
+{% for interface in Leaf01.Interfaces %}
+{% for _ in range(interface.Start, (interface.End + 1)) %}
+!
+interface Ethernet{{_}}
+  mtu {{interface.MTU}}
+  speed {{interface.Speed}}
+  fec none
+{% if interface.Status == 'enabled' %}
+  no shutdown
+{% else %}
+  shutdown
+{% endif %}
+{% endfor %}
+{% endfor %}

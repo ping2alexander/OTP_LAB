@@ -1,0 +1,61 @@
+!
+router bgp 65101
+ router-id 10.208.20.1
+ log-neighbor-changes
+ timer 60 180
+ !
+ address-family ipv4 unicast
+  redistribution connected
+  maximum-paths 1
+  maximum-paths ibgp 1
+ !
+ address-family ipv6 unicast
+  redistribution connected
+  maximum-paths 1
+  maximum-paths ibgp 1
+ !
+ neighbor interface Ethernet46
+  remote-as internal
+  !
+  address-family ipv4 unicast
+   activate
+  !
+  address-family ipv6 unicast
+   activate
+ !
+ neighbor interface Ethernet53
+  remote-as external
+  !
+  address-family ipv4 unicast
+   activate
+  !
+  address-family ipv6 unicast
+   activate
+ !
+ neighbor interface Ethernet54
+  remote-as external
+  !
+  address-family ipv4 unicast
+   activate
+  !
+  address-family ipv6 unicast
+   activate
+ !
+ neighbor interface Ethernet55
+  remote-as external
+  !
+  address-family ipv4 unicast
+   activate
+  !
+  address-family ipv6 unicast
+   activate
+ !
+ neighbor interface Ethernet56
+  remote-as external
+  !
+  address-family ipv4 unicast
+   activate
+  !
+  address-family ipv6 unicast
+   activate
+

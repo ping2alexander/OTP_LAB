@@ -1,0 +1,178 @@
+ Leaf01:
+   hostname: "Leaf-01-RACK-1-24-S5248F-ON"
+   Mgmt_IPAddress: ""
+   Mgmt_Subnet: ""
+   Mgmt_Gateway: ""
+   Interfaces:
+    - 
+     Speed: 25000
+     Number_of_ports: 48
+     Start: 1
+     End: 48
+     MTU: 9100
+     Status: "enabled"
+    - 
+     Speed: 100000
+     Number_of_ports: 4
+     Start: 53
+     End: 56
+     MTU: 9100
+     Status: "enabled"
+    -      
+     Speed: 200000
+     Number_of_ports: 2
+     Start: 49
+     End: 50
+     MTU: 9100
+     Status: "disabled"
+   LoopbackVLAN:
+    -
+     Index: 0
+     IPAddress: "10.208.20.1"
+     Netmask: 28
+   BGP:
+     ASNumber: 65101
+     routerId: "10.208.20.1"
+     AddressFamily: 
+      -
+       AF: "ipv4"
+       Distribution: "connected"
+      -
+       AF: "ipv6"
+       Distribution: "connected"
+     Neighbors:
+       -
+        interface: "Ethernet46"
+        remoteas: "internal"
+        AddressFamily:
+           -
+            AF: "ipv4"
+            Distribution: "connected"
+           -
+            AF: "ipv6"
+            Distribution: "connected"
+
+       -     
+        interface: "Ethernet53"
+        remoteas: "external"
+        AddressFamily:
+           -
+            AF: "ipv4"
+            Distribution: "connected"
+           -
+            AF: "ipv6"
+            Distribution: "connected"
+       -   
+        interface: "Ethernet54"
+        remoteas: "external"
+        AddressFamily:
+           -
+            AF: "ipv4"
+            Distribution: "connected"
+           -
+            AF: "ipv6"
+            Distribution: "connected"
+       -   
+        interface: "Ethernet55"
+        remoteas: "external"
+        AddressFamily:
+           -
+            AF: "ipv4"
+            Distribution: "connected"
+           -
+            AF: "ipv6"
+            Distribution: "connected"
+       - 
+        interface: "Ethernet56"
+        remoteas: "external"
+        AddressFamily:
+           -
+            AF: "ipv4"
+            Distribution: "connected"
+           -
+            AF: "ipv6"
+            Distribution: "connected"
+    PortChannels:
+      - 
+       ChannelNumber: 1
+       Description: "ICCP_Link"
+       Members:
+         -
+          member: Ethernet47
+         -
+          member: Ethernet48
+      -
+       ChannelNumber: 101
+       Description: "McLAG port"
+       Members:
+         -
+          member: Ethernet1
+      -
+       ChannelNumber: 102
+       Description: "McLAG port"
+       Members:
+         -
+          member: Ethernet2
+      -
+       ChannelNumber: 103
+       Description: "McLAG port"
+       Members:
+         -
+          member: Ethernet3
+      -
+       ChannelNumber: 104
+       Description: "McLAG port"
+       Members:
+         -
+          member: Ethernet4
+      -
+       ChannelNumber: 105
+       Description: "McLAG port"
+       Members:
+         -
+          member: Ethernet5
+      -
+       ChannelNumber: 106
+       Description: "McLAG port"
+       Members:
+         -
+          member: Ethernet6
+      -
+       ChannelNumber: 107
+       Description: "McLAG port"
+       Members:
+         -
+          member: Ethernet7
+      -
+       ChannelNumber: 108
+       Description: "McLAG port"
+       Members:
+         -
+          member: Ethernet8
+      -
+       ChannelNumber: 109
+       Description: "McLAG port"
+       Members:
+         -
+          member: Ethernet9
+      -
+       ChannelNumber: 110
+       Description: "McLAG port"
+       Members:
+         -
+          member: Ethernet10
+      -
+       ChannelNumber: 111
+       Description: "McLAG port"
+       Members:
+         -
+          member: Ethernet11
+      -
+       ChannelNumber: 112
+       Description: "McLAG port"
+       Members:
+         -
+          member: Ethernet12
+
+
+
